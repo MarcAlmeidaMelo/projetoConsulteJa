@@ -1,0 +1,192 @@
+.container {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    /* COMENTÁRIO: Adiciona um padding inferior para dar espaço para o conteúdo rolar abaixo da área de visualização. */
+    min-height: 100vh;
+    /* COMENTÁRIO: Garante que o container ocupe pelo menos a altura total da viewport, permitindo a rolagem quando o conteúdo exceder. */
+}
+
+.logo {
+
+    max-width: 55%;
+    /* Impede que ultrapasse o container */
+    height: auto;
+    /* Garante proporção correta */
+    width: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: -40px auto -40px;
+    /* centraliza horizontalmente e dá espaço abaixo */
+
+
+}
+
+.consulta {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    max-width: 50%;
+    width: 400px;
+
+
+    & button {
+
+        border-radius: 30px;
+        background-color: transparent;
+        height: 30px;
+        width: 90px;
+        border: 2px solid #000000;
+        font-weight: bold;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    & button:hover {
+
+        opacity: 0.4;
+    }
+
+    & input {
+
+        border-radius: 30px;
+        height: 35px;
+        background-color: #f4f4f4;
+        border: 2px solid #000000;
+        font-size: 16px;
+        padding-left: 10px;
+        outline: none;
+
+    }
+
+    & .buscar svg {
+
+        margin-left: 4px;
+        vertical-align: middle;
+    }
+
+}
+
+
+.cards {
+
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid #000000;
+
+    & button {
+
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button:hover {
+
+        opacity: 0.4;
+
+    }
+
+}
+
+.imagemProduto {
+
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    align-self: center;
+    margin: 10px;
+
+
+
+}
+
+.dataProduto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* COMENTÁRIO: Permite que o bloco de dados ocupe o espaço disponível no card. */
+}
+
+& p {
+
+    color: #000000;
+    font-weight: 630;
+    font-size: 14px;
+
+
+}
+
+& span {
+
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+
+
+/* COMENTÁRIO: Estilos para o Pop-up de Produto Não Encontrado */
+.not-found-popup {
+    position: fixed;
+    /* COMENTÁRIO: Posição fixa para que o pop-up fique sempre visível. */
+    top: 50%;
+    /* COMENTÁRIO: Centraliza verticalmente. */
+    left: 50%;
+    /* COMENTÁRIO: Centraliza horizontalmente. */
+    transform: translate(-50%, -50%);
+    /* COMENTÁRIO: Ajusta a posição para o centro exato. */
+    background-color: #ffcccc;
+    /* COMENTÁRIO: Cor de fundo para indicar erro. */
+    color: #cc0000;
+    /* COMENTÁRIO: Cor do texto. */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* COMENTÁRIO: Garante que o pop-up fique acima de outros elementos. */
+    text-align: center;
+    border: 2px solid #cc0000;
+}
+
+.not-found-popup p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.not-found-popup button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.not-found-popup button:hover {
+    opacity: 0.8;
+}
