@@ -18,7 +18,7 @@ import relogio from "../assets/relogio.jpeg"
 export const productsData = [
   {
     "foto": camisa,
-    "codigo": "P001",
+    "codigo": "5449000000996",
     "nome": "Camiseta Básica",
     "descricao": "Camiseta 100% algodão, disponível em várias cores.",
     "preco": 49.90
