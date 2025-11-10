@@ -32,7 +32,7 @@ export const productsData = [
   },
   {
     "foto": tenis,
-    "codigo": "P003",
+    "codigo": "4006381514422",
     "nome": "Tênis Esportivo",
     "descricao": "Tênis leve e respirável, ideal para caminhadas e corridas.",
     "preco": 199.00
