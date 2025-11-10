@@ -25,7 +25,7 @@ export const productsData = [
   },
   {
     "foto": calca,
-    "codigo": "P002",
+    "codigo": "9002490100070",
     "nome": "Calça Jeans Slim",
     "descricao": "Calça jeans modelo slim com elastano, confortável e moderna.",
     "preco": 129.90
